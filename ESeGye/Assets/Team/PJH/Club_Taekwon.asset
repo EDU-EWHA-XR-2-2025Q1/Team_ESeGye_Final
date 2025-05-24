@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25f72a925e51d4499ee4f00307b66d, type: 3}
+  m_Name: Club_Taekwon
+  m_EditorClassIdentifier: 
+  clubName: "\uC774\uD654\uD0DC\uAD8C"
+  shortInfo: "\"\uCD08\uBCF4\uC790\uBD80\uD130 \uC720\uB2E8\uC790\uAE4C\uC9C0 \uBAA8\uB450
+    \uD658\uC601\uD569\uB2C8\uB2E4\""
+  location: "\uD559\uBB38\uAD00 4\uCE35 422\uD638"
+  contidition: "\uC8FC 2\uD68C \uC815\uADDC\uBAA8\uC784 \uD544\uCC38"
+  time: "\uD654,\uBAA9,\uD1A0,\uC77C \uC800\uB141"
+  description: "\uC774\uD654\uD0DC\uAD8C\uC740 \uC774\uD654\uC5EC\uB300 \uD0DC\uAD8C\uB3C4
+    \uC911\uC559\uB3D9\uC544\uB9AC\uC785\uB2C8\uB2E4.\n\uB204\uAD6C\uB098 \uD568\uAED8\uD558\uB294
+    \uC5F4\uB9B0 \uB3D9\uC544\uB9AC\uC785\uB2C8\uB2E4."
+  activiry: "\uD558\uACC4\uD6C8\uB828, mt, \uB300\uB3D9\uC81C \uBD80\uC2A4, \uD0DC\uAD8C\uB3C4
+    \uB300\uD68C "
+  tags:
+  - "#\uAC74\uAC15"
+  - "#\uC6B4\uB3D9"
+  - "#\uC2A4\uD3EC\uCE20"
