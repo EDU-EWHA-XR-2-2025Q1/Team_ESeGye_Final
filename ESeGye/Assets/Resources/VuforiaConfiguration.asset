@@ -23,8 +23,8 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 11.2.4
-    eulaAcceptedVersions: '{"Values":["","0.0","11.2"]}'
+    version: 11.1.3
+    eulaAcceptedVersions: '{"Values":["","0.0","11.2","11.1"]}'
   database:
     disableModelExtraction: 0
   plugins:
@@ -50,8 +50,6 @@ MonoBehaviour:
   playmode:
     mRecordingPath: 
     playModeType: 0
-    mSimulatorInputActionAsset: {fileID: -944628639613478452, guid: eae7022f5cfd04e8189b1f372421b225,
-      type: 3}
   webcam:
     renderTextureLayer: 30
   packageInformation:
