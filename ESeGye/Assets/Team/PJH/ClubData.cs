@@ -14,5 +14,4 @@ public class ClubData : ScriptableObject
     public string description;
     public string activiry;
     public string[] tags;
-    public string applyLink;
 }
