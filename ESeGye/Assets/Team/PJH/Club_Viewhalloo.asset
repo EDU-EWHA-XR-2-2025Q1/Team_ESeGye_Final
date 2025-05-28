@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25f72a925e51d4499ee4f00307b66d, type: 3}
+  m_Name: Club_Viewhalloo
+  m_EditorClassIdentifier: 
+  clubName: "\uBDF0\uD560\uB85C"
+  shortInfo: "\"viEWHAlloo\uC640 \uD568\uAED8 \uBA4B\uC9C4 \uBB34\uB300\uB97C \uB9CC\uB4E4\uC5B4\uAC00\uC694!\""
+  location: "\uD559\uC0DD\uBB38\uD654\uAD00 B106-1\uD638"
+  contidition: "\uD544\uC218 \uD65C\uB3D9\uAE30\uAC04 2\uB144"
+  time: "\uC6D4\uC218 8:00-10:00, \uD1A0 8:00-12:00 "
+  description: "\uBDF0\uD560\uB85C\uB294 \uC774\uD654\uC758 \uC720\uC77C\uD55C \uC911\uC559
+    \uC7AC\uC988\uB304\uC2A4 \uB3D9\uC544\uB9AC\uC785\uB2C8\uB2E4. \n\uB2E4\uC591\uD55C
+    \uC74C\uC545\uC5D0 \uB9DE\uCDB0 \uD45C\uD604\uD55C \uC7AC\uC988\uB304\uC2A4\uB97C
+    \uC911\uC2EC\uC73C\uB85C K-POP, POP-Choreo \uB4F1 \uC5EC\uB7EC \uC7A5\uB974\uC758
+    \uCDA4\uC73C\uB85C \uB2E4\uCC44\uB85C\uC6B4 \uAC10\uC815\uC744 \uD45C\uD604\uD569\uB2C8\uB2E4.
+    \n\uC548\uBB34 \uCEE4\uBC84\uB294 \uBB3C\uB860 \uC7AC\uC988 \uC548\uBB34 \uCC3D\uC791\uAE4C\uC9C0
+    \uD65C\uBC1C\uD55C \uB3C4\uC804\uC744 \uC2DC\uB3C4\uD558\uB294 \uB304\uC2A4\uD300\uC785\uB2C8\uB2E4.\r\n"
+  activiry: "\uB300\uB3D9\uC81C, \uC77C\uC77C\uD638\uD504, \uBC84\uC2A4\uD0B9, \uCC44\uD50C
+    \uACF5\uC5F0, \uC678\uBD80 \uCD08\uCCAD\uD589\uC0AC, \uC2A4\uD29C\uB514\uC624
+    \uCD2C\uC601 "
+  tags:
+  - "#\uB304\uC2A4"
+  - "#\uACF5\uC5F0"
+  - "#\uC7AC\uC988"
+  applyLink: https://www.instagram.com/ewha_jazzdance_viewhalloo?igsh=MXM2d2Y1bmU3dHJlcg==
