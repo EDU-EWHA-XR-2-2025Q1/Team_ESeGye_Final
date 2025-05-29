@@ -190,8 +190,7 @@ MonoBehaviour:
   m_text: "\uD074\uB85C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -685,7 +684,6 @@ GameObject:
   - component: {fileID: 1733270205}
   - component: {fileID: 1733270204}
   - component: {fileID: 1733270203}
-  - component: {fileID: 1733270206}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -743,26 +741,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1733270206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733270202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a728e8e5f42e47fa876b51b3454693a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steps: []
-  panelTutorial: {fileID: 1778169338}
-  panelNameInput: {fileID: 0}
-  tutorialText: {fileID: 316344096}
-  nextButton: {fileID: 560134867}
-  nameInputField: {fileID: 0}
-  nameSubmitButton: {fileID: 0}
-  typingSpeed: 0.05
 --- !u!1 &1778169338
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,8 +878,7 @@ MonoBehaviour:
   m_text: "\uB2E4\uC74C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
