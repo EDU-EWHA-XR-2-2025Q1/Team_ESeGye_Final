@@ -4,32 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-<<<<<<< HEAD
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/0-Main.unity
-    guid: a09cb257d566c489595b16ab37547666
-  - enabled: 1
-    path: Assets/Team/PJH/InfoScene.unity
-    guid: c450c1d8c7c719b40ab09390c94d38a2
-  - enabled: 1
-    path: Assets/Team/PJH/ScanScene.unity
-    guid: 56baf60b6410e094fac71778d83a1e95
-=======
-  - enabled: 1
-    path: Assets/SamplesResources/Scenes/0-Main.unity
-    guid: a09cb257d566c489595b16ab37547666
-  - enabled: 1
-    path: Assets/Team/PJH/ScanScene.unity
-    guid: 56baf60b6410e094fac71778d83a1e95
-  - enabled: 1
-    path: Assets/Team/PJH/InfoScene.unity
-    guid: c450c1d8c7c719b40ab09390c94d38a2
-  - enabled: 1
-    path: Assets/Team/NKDY/PuzzleScene.unity
-    guid: acd60bcee8ac37c478d5a6f2d81f9ba0
-  - enabled: 1
-    path: Assets/Team/NKDY/MainScene.unity
-    guid: 7fd34b058ed26b74db89e7869aec9ae2
->>>>>>> origin/member/NKDY2
+  m_Scenes: []
   m_configObjects: {}
