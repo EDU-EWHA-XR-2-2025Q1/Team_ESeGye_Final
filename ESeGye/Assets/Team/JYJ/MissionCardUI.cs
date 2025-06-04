@@ -14,6 +14,9 @@ public class MissionCardUI : MonoBehaviour
     [Header("미션 이미지")]
     public List<Sprite> emojiSprites;
 
+    [Header("학문관 미션 버튼")]
+    public GameObject arriveButton;
+
     private int currentIndex = 0;
 
     // 미션 완료 상태
@@ -50,10 +53,17 @@ public class MissionCardUI : MonoBehaviour
 
     public void ShowMission(int index)
     {
+        Debug.Log($"ShowMission 호출됨 - index: {index}");
+        Debug.Log($"[ShowMission] currentIndex: {index}, missionCompleted[{index}] = {missionCompleted[index]}");
         titleText.text = titles[index];
         descriptionText.text = descriptions[index];
         emojiImg.sprite = emojiSprites[index];
+        bool isCompleted = PlayerPrefs.GetInt($"Mission_{index}_Complete", 0) == 1;
         puzzleStatusText.text = missionCompleted[index] ? "▣ 퍼즐 획득 완료 " : "ㅁ 퍼즐 획득 필요 ";
+        if (arriveButton != null)
+        {
+            arriveButton.SetActive(index == 0);
+        }
     }
 
     public void NextMission()
@@ -68,18 +78,22 @@ public class MissionCardUI : MonoBehaviour
 
         missionCompleted[index] = true;
 
+        Debug.Log($"[CompleteMission] index: {index}, missionCompleted[{index}] = {missionCompleted[index]}");
+
         // PlayerPrefs에 영구 저장
         PlayerPrefs.SetInt($"Mission_{index}_Complete", 1);
         PlayerPrefs.Save();
 
-        if (index == currentIndex)
-        {
-            ShowMission(index); // UI 갱신
-        }
+        ShowMission(currentIndex); 
     }
 
     public void OnClickMissionComplete()
     {
         CompleteMission(currentIndex);
+    }
+
+    public void OnClickMission1Arrived()
+    {
+        CompleteMission(0); // Mission 1: 학문관 도착
     }
 }
