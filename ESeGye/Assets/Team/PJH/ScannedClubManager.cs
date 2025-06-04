@@ -14,6 +14,15 @@ public class ScannedClubManager : MonoBehaviour
     private bool mission3Done = false;
     private bool mission4Done = false;
 
+    // Mission씬과의 연결을 위함
+    private void Start()
+    {
+        if (missionUI == null)
+        {
+            missionUI = FindObjectOfType<MissionCardUI>();
+        }
+    }
+
     public void OnScanClub(ClubData club)
     {
         if (scannedClubNames.Contains(club.clubName))
@@ -22,6 +31,7 @@ public class ScannedClubManager : MonoBehaviour
         scannedClubNames.Add(club.clubName);
 
         // Mission 2: 첫 스캔 성공
+
         if (!mission2Done)
         {
             missionUI.CompleteMission(1);

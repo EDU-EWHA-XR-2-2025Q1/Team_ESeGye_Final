@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 967515988}
   - component: {fileID: 967515990}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ' MissionCardUI'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,8 +587,8 @@ RectTransform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1726939081}
   - {fileID: 1816567279}
+  - {fileID: 1726939081}
   - {fileID: 614367943}
   - {fileID: 681595068}
   - {fileID: 355626880}
