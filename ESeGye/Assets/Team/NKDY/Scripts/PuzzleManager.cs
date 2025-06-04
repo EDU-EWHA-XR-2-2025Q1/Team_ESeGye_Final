@@ -2,69 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // TextMeshPro ³×ÀÓ½ºÆäÀÌ½º Ãß°¡
-
+using TMPro;
 
 public class PuzzleManager : MonoBehaviour
 {
-    public GameObject[] puzzlePieces; // ÆÛÁñ Á¶°¢ ¹è¿­
-    public GameObject rewardImage;    // ÆÛÁñ ¿Ï¼º ½Ã º¸»ó ÀÌ¹ÌÁö
-    public TMP_Text missionProgressText;  // TextMeshPro·Î º¯°æ
+    public GameObject[] puzzlePieces; // í¼ì¦ ì¡°ê°ë“¤
+    public GameObject rewardImage;    // í¼ì¦ ì „ë¶€ íšë“ ì‹œ ë³´ì—¬ì¤„ ë³´ìƒ ì´ë¯¸ì§€
+    public TMP_Text missionProgressText;
 
     private int collectedCount = 0;
-    private bool[] pieceCollected;
 
     private void Start()
     {
-        pieceCollected = new bool[puzzlePieces.Length];
+        collectedCount = 0;
 
-        // Ã³À½¿¡ ÆÛÁñ Á¶°¢ ¼û±â±â
-        foreach (var piece in puzzlePieces)
+        for (int i = 0; i < puzzlePieces.Length; i++)
         {
-            piece.SetActive(false);
+            bool isCollected = PlayerPrefs.GetInt($"Mission_{i}_Complete", 0) == 1;
+            puzzlePieces[i].SetActive(isCollected);
+
+            if (isCollected)
+                collectedCount++;
         }
 
-        // º¸»ó ÀÌ¹ÌÁöµµ ¼û±â±â
         if (rewardImage != null)
-            rewardImage.SetActive(false);
+            rewardImage.SetActive(collectedCount == puzzlePieces.Length);
 
         UpdateMissionProgress();
-    }
-
-    // ÆÛÁñ Á¶°¢ È¹µæ ¸Ş¼­µå
-    public void CollectPiece(int index)
-    {
-        if (!pieceCollected[index])
-        {
-            pieceCollected[index] = true;
-            puzzlePieces[index].SetActive(true);
-            collectedCount++;
-
-            UpdateMissionProgress();
-            CheckCompletion();
-        }
-    }
-
-    // ÆÛÁñ ¿Ï¼º ¿©ºÎ È®ÀÎ
-    private void CheckCompletion()
-    {
-        if (collectedCount == puzzlePieces.Length)
-        {
-            if (rewardImage != null)
-                rewardImage.SetActive(true);
-
-            Debug.Log("ÆÛÁñ ¿Ï¼º"); if (missionProgressText != null)
-            {
-                missionProgressText.text = "Mission Completed!";
-            }
-        }
     }
 
     private void UpdateMissionProgress()
     {
         if (missionProgressText != null)
         {
-            missionProgressText.text = $"Mission {collectedCount}/{puzzlePieces.Length} Completed";
+            if (collectedCount == puzzlePieces.Length)
+                missionProgressText.text = "Mission Completed!";
+            else
+                missionProgressText.text = $"Mission {collectedCount}/{puzzlePieces.Length} Completed";
         }
     }
 }
