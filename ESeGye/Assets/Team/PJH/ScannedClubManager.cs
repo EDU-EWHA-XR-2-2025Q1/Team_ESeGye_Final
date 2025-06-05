@@ -4,37 +4,34 @@ using System.Linq;
 
 public class ScannedClubManager : MonoBehaviour
 {
-    public MissionCardUI missionUI; // 인스펙터에서 연결
+    private HashSet<string> scannedClubNames = new();
+    private Dictionary<string, int> tagCount = new();
 
-    private HashSet<string> scannedClubNames = new(); // 중복 방지
-    private Dictionary<string, int> tagCount = new(); // 태그별 개수
-
-    private bool mission1Done = false;
     private bool mission2Done = false;
     private bool mission3Done = false;
     private bool mission4Done = false;
 
-    // Mission씬과의 연결을 위함
     private void Start()
     {
-        if (missionUI == null)
-        {
-            missionUI = FindObjectOfType<MissionCardUI>();
-        }
+        // PlayerPrefs에 저장된 상태를 기반으로 내부 상태 초기화
+        mission2Done = PlayerPrefs.GetInt("Mission_1_Complete", 0) == 1;
+        mission3Done = PlayerPrefs.GetInt("Mission_2_Complete", 0) == 1;
+        mission4Done = PlayerPrefs.GetInt("Mission_3_Complete", 0) == 1;
     }
 
     public void OnScanClub(ClubData club)
     {
+        Debug.Log($"[Scan] 클럽 스캔됨: {club.clubName}");
         if (scannedClubNames.Contains(club.clubName))
-            return; // 중복 스캔 방지
+            return;
 
         scannedClubNames.Add(club.clubName);
 
         // Mission 2: 첫 스캔 성공
-
         if (!mission2Done)
         {
-            missionUI.CompleteMission(1);
+            PlayerPrefs.SetInt("Mission_1_Complete", 1); // Mission 2
+            PlayerPrefs.Save();
             mission2Done = true;
         }
 
@@ -48,14 +45,16 @@ public class ScannedClubManager : MonoBehaviour
 
         if (!mission3Done && tagCount.Values.Any(count => count >= 3))
         {
-            missionUI.CompleteMission(2);
+            PlayerPrefs.SetInt("Mission_2_Complete", 1); // Mission 3
+            PlayerPrefs.Save();
             mission3Done = true;
         }
 
         // Mission 4: 모집 중 동아리
         if (!mission4Done && club.isRecruiting)
         {
-            missionUI.CompleteMission(3);
+            PlayerPrefs.SetInt("Mission_3_Complete", 1); // Mission 4
+            PlayerPrefs.Save();
             mission4Done = true;
         }
     }

@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 209938185}
   - component: {fileID: 209938184}
   - component: {fileID: 209938187}
+  - component: {fileID: 209938188}
   m_Layer: 0
   m_Name: ImageTarget (2)
   m_TagString: Untagged
@@ -458,6 +459,19 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 209938185}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &209938188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209938183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubData: {fileID: 11400000, guid: e0be012b32299c2479573ee5859d8a48, type: 2}
 --- !u!1 &290034286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1330,7 @@ GameObject:
   - component: {fileID: 511450354}
   - component: {fileID: 511450353}
   - component: {fileID: 511450356}
+  - component: {fileID: 511450357}
   m_Layer: 0
   m_Name: ImageTarget (4)
   m_TagString: Untagged
@@ -1429,6 +1444,19 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 511450354}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &511450357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511450352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubData: {fileID: 11400000, guid: fa1ee23d0874c75409fb55b0f10eb5af, type: 2}
 --- !u!1 &737270342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,13 +2090,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1127174293}
+      - m_Target: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
         m_TargetAssemblyTypeName: ClubButtonHandler, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2815,6 +2843,7 @@ GameObject:
   - component: {fileID: 1501310898}
   - component: {fileID: 1501310897}
   - component: {fileID: 1501310900}
+  - component: {fileID: 1501310901}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -2928,6 +2957,19 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1501310898}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1501310901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501310896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubData: {fileID: 11400000, guid: 3ef63eca5552c7b4d8ac568947e5b0f6, type: 2}
 --- !u!1 &1528350924
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,6 +3059,7 @@ GameObject:
   - component: {fileID: 1549132455}
   - component: {fileID: 1549132454}
   - component: {fileID: 1549132457}
+  - component: {fileID: 1549132458}
   m_Layer: 0
   m_Name: ImageTarget (1)
   m_TagString: Untagged
@@ -3130,6 +3173,19 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1549132455}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1549132458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549132453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubData: {fileID: 11400000, guid: 36d8746678c975046aa88ed53810b91a, type: 2}
 --- !u!1 &1564907762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,6 +3546,7 @@ GameObject:
   - component: {fileID: 1760312846}
   - component: {fileID: 1760312845}
   - component: {fileID: 1760312848}
+  - component: {fileID: 1760312849}
   m_Layer: 0
   m_Name: ImageTarget (3)
   m_TagString: Untagged
@@ -3603,6 +3660,19 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1760312846}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!114 &1760312849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760312844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9940157c019394c4e90ad5631d55d406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubData: {fileID: 11400000, guid: d3f4ca4fe32dd0c43a4ee56a68e0c4be, type: 2}
 --- !u!1 &1783408994
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,7 +4296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ab4523f08c937428cb8a17f7da2029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionUI: {fileID: 0}
 --- !u!4 &1980080634
 Transform:
   m_ObjectHideFlags: 0

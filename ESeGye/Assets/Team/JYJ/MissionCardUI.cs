@@ -36,13 +36,16 @@ public class MissionCardUI : MonoBehaviour
         "현재 모집 중인 동아리를 찾아 스캔하세요. 내 첫 지원은 어떤 동아리일까요?"
     };
 
-    private readonly bool[] puzzleReceived = {
-        true, false, false, false // 예시 상태
-    };
-
     void Start()
     {
-        ResetMissionsAtStart(); // 테스트용
+        // 최초 1회만 초기화
+        if (!PlayerPrefs.HasKey("MissionsInitialized"))
+        {
+            ResetMissionsAtStart();
+            PlayerPrefs.SetInt("MissionsInitialized", 1);
+            PlayerPrefs.Save();
+        }
+
         // 저장된 퍼즐 상태 불러오기
         for (int i = 0; i < missionCompleted.Length; i++)
         {
@@ -52,15 +55,27 @@ public class MissionCardUI : MonoBehaviour
         ShowMission(currentIndex);
     }
 
+    void Update()
+    {
+        // R 키를 누르면 초기화
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ClearMissionProgress();
+        }
+    }
+
     public void ShowMission(int index)
     {
         Debug.Log($"ShowMission 호출됨 - index: {index}");
         Debug.Log($"[ShowMission] currentIndex: {index}, missionCompleted[{index}] = {missionCompleted[index]}");
+
         titleText.text = titles[index];
         descriptionText.text = descriptions[index];
         emojiImg.sprite = emojiSprites[index];
+
         bool isCompleted = PlayerPrefs.GetInt($"Mission_{index}_Complete", 0) == 1;
-        puzzleStatusText.text = missionCompleted[index] ? "▣ 퍼즐 획득 완료 " : "ㅁ 퍼즐 획득 필요 ";
+        puzzleStatusText.text = isCompleted ? "▣ 퍼즐 획득 완료 " : "ㅁ 퍼즐 획득 필요 ";
+
         if (arriveButton != null)
         {
             arriveButton.SetActive(index == 0);
@@ -78,14 +93,13 @@ public class MissionCardUI : MonoBehaviour
         if (index < 0 || index >= missionCompleted.Length) return;
 
         missionCompleted[index] = true;
-
         Debug.Log($"[CompleteMission] index: {index}, missionCompleted[{index}] = {missionCompleted[index]}");
 
-        // PlayerPrefs에 영구 저장
         PlayerPrefs.SetInt($"Mission_{index}_Complete", 1);
         PlayerPrefs.Save();
+        Debug.Log($"[Scan] 저장된 Mission_1_Complete: {PlayerPrefs.GetInt("Mission_1_Complete")}");
 
-        ShowMission(currentIndex); 
+        ShowMission(currentIndex);
     }
 
     public void OnClickMissionComplete()
@@ -95,10 +109,10 @@ public class MissionCardUI : MonoBehaviour
 
     public void OnClickMission1Arrived()
     {
-        CompleteMission(0); // Mission 1: 학문관 도착
+        CompleteMission(0);
     }
 
-    // 미션 저장 상태 초기화
+    // 초기화
     private void ResetMissionsAtStart()
     {
         for (int i = 0; i < missionCompleted.Length; i++)
@@ -107,5 +121,27 @@ public class MissionCardUI : MonoBehaviour
             missionCompleted[i] = false;
         }
         PlayerPrefs.Save();
+    }
+
+    // 개발용 전체 초기화 함수 (R 키로로 연결)
+    public void ClearMissionProgress()
+    {
+        PlayerPrefs.DeleteKey("MissionsInitialized");
+
+        for (int i = 0; i < missionCompleted.Length; i++)
+        {
+            PlayerPrefs.DeleteKey($"Mission_{i}_Complete");
+        }
+
+        PlayerPrefs.Save();
+
+        Debug.Log("모든 미션 상태 초기화");
+
+        for (int i = 0; i < missionCompleted.Length; i++)
+        {
+            missionCompleted[i] = false;
+        }
+
+        ShowMission(currentIndex);
     }
 }
