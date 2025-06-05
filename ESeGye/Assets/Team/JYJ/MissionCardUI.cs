@@ -42,6 +42,7 @@ public class MissionCardUI : MonoBehaviour
 
     void Start()
     {
+        ResetMissionsAtStart(); // 테스트용
         // 저장된 퍼즐 상태 불러오기
         for (int i = 0; i < missionCompleted.Length; i++)
         {
@@ -95,5 +96,16 @@ public class MissionCardUI : MonoBehaviour
     public void OnClickMission1Arrived()
     {
         CompleteMission(0); // Mission 1: 학문관 도착
+    }
+
+    // 미션 저장 상태 초기화
+    private void ResetMissionsAtStart()
+    {
+        for (int i = 0; i < missionCompleted.Length; i++)
+        {
+            PlayerPrefs.SetInt($"Mission_{i}_Complete", 0);
+            missionCompleted[i] = false;
+        }
+        PlayerPrefs.Save();
     }
 }
