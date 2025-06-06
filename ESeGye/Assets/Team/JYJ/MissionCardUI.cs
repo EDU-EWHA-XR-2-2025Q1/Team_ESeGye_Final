@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System.Collections;
 
 public class MissionCardUI : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class MissionCardUI : MonoBehaviour
     // 미션 완료 상태
     private bool[] missionCompleted = new bool[4]; // 초기값 전부 false
 
+    private const string FirstEnterMissionSceneKey = "FirstEnter_MissionScene";
+    [SerializeField] private GameObject speechBubblePrefab;
+    [SerializeField] private Transform speechBubbleAnchor;
+    [SerializeField] private GameObject dimmedBackground;  
+
     private readonly string[] titles = {
         "Mission 1: 학문관 도착",
         "Mission 2: 첫 스캔 성공",
@@ -38,11 +44,22 @@ public class MissionCardUI : MonoBehaviour
 
     void Start()
     {
+        if (dimmedBackground != null)
+            dimmedBackground.SetActive(false);
+            
         // 최초 1회만 초기화
         if (!PlayerPrefs.HasKey("MissionsInitialized"))
         {
             ResetMissionsAtStart();
             PlayerPrefs.SetInt("MissionsInitialized", 1);
+            PlayerPrefs.Save();
+        }
+
+        // 최초 진입 시 말풍선
+        if (!PlayerPrefs.HasKey(FirstEnterMissionSceneKey))
+        {
+            StartCoroutine(ShowIntroSpeechBubble());
+            PlayerPrefs.SetInt(FirstEnterMissionSceneKey, 1);
             PlayerPrefs.Save();
         }
 
@@ -61,6 +78,52 @@ public class MissionCardUI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             ClearMissionProgress();
+        }
+    }
+
+
+    private IEnumerator ShowIntroSpeechBubble()
+    {
+        dimmedBackground.SetActive(true);
+
+        string[] introLines = new string[]
+        {
+       "이곳은 미션의 시작점이야.",
+        "총 4개의 미션이 준비되어 있어!",
+        "미션을 완료하면 퍼즐 조각을 획득할 수 있어.",
+        "그럼 퍼즐 조각을 획득해볼까?"
+        };
+
+        GameObject bubble = Instantiate(speechBubblePrefab, speechBubbleAnchor.position, Quaternion.identity, speechBubbleAnchor);
+        TMP_Text text = bubble.GetComponentInChildren<TMP_Text>(true);
+
+        if (text == null)
+        {
+            Debug.LogWarning("⚠ TMP_Text가 말풍선 프리팹 안에서 발견되지 않았습니다.");
+            yield break;
+        }
+
+        bubble.SetActive(true);
+
+
+
+        foreach (string line in introLines)
+        {
+            yield return StartCoroutine(TypeText(text, line));
+            yield return new WaitForSeconds(1.5f);
+        }
+
+        Destroy(bubble); // 또는 bubble.SetActive(false);
+        dimmedBackground.SetActive(false);
+    }
+
+    private IEnumerator TypeText(TMP_Text text, string fullText, float charDelay = 0.05f)
+    {
+        text.text = "";
+        foreach (char c in fullText)
+        {
+            text.text += c;
+            yield return new WaitForSeconds(charDelay);
         }
     }
 
@@ -144,5 +207,7 @@ public class MissionCardUI : MonoBehaviour
         }
 
         ShowMission(currentIndex);
+
+        StartCoroutine(ShowIntroSpeechBubble());
     }
 }
