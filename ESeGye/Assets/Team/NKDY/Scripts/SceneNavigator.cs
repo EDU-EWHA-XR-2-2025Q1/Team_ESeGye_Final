@@ -17,6 +17,12 @@ public class SceneNavigator : MonoBehaviour
         SceneManager.LoadScene("PuzzleScene");
     }
 
+    public void GoToClosingSceneFromMain()
+    {
+        Debug.Log("▶ GoToClosingSceneFromMain 호출됨");
+        SceneManager.LoadScene("ClosingScene");
+    }
+
     public void GoToMainSceneFromMain()
     {
         Debug.Log("▶ GoToMainSceneFromMain 호출됨");

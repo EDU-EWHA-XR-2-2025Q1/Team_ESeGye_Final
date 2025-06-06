@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:ESeGye/Assets/Team/JSH/Puzzle/ari3.png.meta
 guid: 850332319aa6b43498738f178a964898
+========
+guid: a23d369137a4c40d9b1238c86ac94e80
+>>>>>>>> fb918c5 (feat: mission list 수정):ESeGye/Assets/Pictures/MapImg.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,6 +99,22 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+<<<<<<<< HEAD:ESeGye/Assets/Team/JSH/Puzzle/ari3.png.meta
+========
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+>>>>>>>> fb918c5 (feat: mission list 수정):ESeGye/Assets/Pictures/MapImg.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
