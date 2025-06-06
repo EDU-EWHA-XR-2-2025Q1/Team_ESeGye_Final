@@ -9,4 +9,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MissionScene");
     }
+
+    public void EndingScene()
+    {
+        SceneManager.LoadScene("Closing");
+    }
 }

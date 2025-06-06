@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Team/PJH/InfoScene.unity
     guid: c450c1d8c7c719b40ab09390c94d38a2
+  - enabled: 1
+    path: Assets/Team/SJH/Closing/Closing.unity
+    guid: c73b41e889a0046b793869252fa5849d
   m_configObjects: {}
