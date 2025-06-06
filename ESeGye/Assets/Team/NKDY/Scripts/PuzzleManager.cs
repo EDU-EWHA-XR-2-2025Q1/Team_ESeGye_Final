@@ -15,8 +15,11 @@ public class PuzzleManager : MonoBehaviour
 
     private int collectedCount = 0;
 
+    public AudioSource successMusic;
+
     private void Start()
     {
+
         collectedCount = 0;
 
 
@@ -42,7 +45,7 @@ public class PuzzleManager : MonoBehaviour
         if (collectedCount == puzzlePieces.Length && rewardImage != null)
         {
             Debug.Log("보상 이미지 애니메이션");
-            ShowPopupWithAnimation(rewardImage);
+            StartCoroutine(ShowRewardWithBGM(rewardImage));
         }
 
         UpdateMissionProgress();
@@ -58,6 +61,7 @@ public class PuzzleManager : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+
 
     private void UpdateMissionProgress()
     {
@@ -81,12 +85,19 @@ public class PuzzleManager : MonoBehaviour
 
     private IEnumerator ScalePopupCoroutine()
     {
+        // 배경음 잠시 끄기
+        AudioSource bgmSource = FindBGM();
+        if (bgmSource != null && bgmSource.isPlaying)
+        {
+            bgmSource.Pause();
+        }
+
         puzzleAcquiredPopup.SetActive(true);
 
         if (puzzleGetAudio != null)
         {
             puzzleGetAudio.Play();
-            Debug.Log("🎵 퍼즐 획득 효과음 재생됨");
+            Debug.Log("퍼즐 획득 효과음 재생됨");
         }
         Transform popup = puzzleAcquiredPopup.transform;
 
@@ -111,7 +122,25 @@ public class PuzzleManager : MonoBehaviour
         yield return new WaitForSeconds(0.2f); // 부드러운 전환
 
         // 말풍선 등장
-        yield return StartCoroutine(ShowTooltip()); 
+        yield return StartCoroutine(ShowTooltip());
+
+        if (bgmSource != null)
+        {
+            bgmSource.UnPause();
+        }
+    }
+
+    private AudioSource FindBGM()
+    {
+        GameObject bgmPlayer = GameObject.Find("BGMPlayer");
+        if (bgmPlayer != null)
+        {
+            AudioManager manager = bgmPlayer.GetComponent<AudioManager>();
+            if (manager != null)
+                return manager.bgmSource;
+        }
+
+        return null;
     }
 
 
@@ -178,10 +207,34 @@ public class PuzzleManager : MonoBehaviour
             puzzleAcquiredPopup.SetActive(false);
     }
 
-    private void ShowPopupWithAnimation(GameObject target)
+    private IEnumerator ShowRewardWithBGM(GameObject reward)
     {
-        StartCoroutine(ScaleTargetCoroutine(target));
+        AudioSource bgmSource = FindBGM();
+        if (bgmSource != null && bgmSource.isPlaying)
+        {
+            bgmSource.Pause();
+        }
 
+        yield return StartCoroutine(ScaleTargetCoroutine(reward));  // 보상 애니메이션
+
+        SuccessRainManager rainManager = FindObjectOfType<SuccessRainManager>();
+        if (rainManager != null)
+        {
+            rainManager.StartRain(); // 여기에 떨어뜨리는 함수 구현되어 있어야 함
+        }
+
+        // 🎵 성공 음악 재생
+        if (successMusic != null)
+        {
+            successMusic.Play();
+            yield return new WaitForSeconds(successMusic.clip.length);
+        }
+
+        // 기존 배경음 재개
+        if (bgmSource != null)
+        {
+            bgmSource.UnPause();
+        }
     }
 
     private IEnumerator ScaleTargetCoroutine(GameObject target)
