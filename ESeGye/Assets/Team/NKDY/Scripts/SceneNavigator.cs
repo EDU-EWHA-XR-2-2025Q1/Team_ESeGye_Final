@@ -23,6 +23,12 @@ public class SceneNavigator : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
+    public void GoToPlaySceneFromMain()
+    {
+        Debug.Log("▶ GoToPlaySceneFromMain 호출됨");
+        SceneManager.LoadScene("PlayScene");
+    }
+    
     public void GoToSettingFromMain()
     {
         Debug.Log("▶ GoToSettingFromMain 호출됨");
