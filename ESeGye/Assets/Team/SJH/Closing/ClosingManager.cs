@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using System.Collections;
 using System.Collections.Generic;
@@ -47,7 +48,7 @@ public class ClosingManager : MonoBehaviour
         nextButton.gameObject.SetActive(true);
         if (index == 5) // 6번째 스텝
         {
-            nextButtonText.text = "메인 화면으로";
+            nextButtonText.text = "메인";
         }
         else
         {
@@ -93,6 +94,6 @@ public class ClosingManager : MonoBehaviour
     {
         panelTutorial.SetActive(false);
         // 메인 화면으로 이동하는 코드 추가
-        // SceneManager.LoadScene("MainScene"); 
+        SceneManager.LoadScene("MainScene"); 
     }
 }
