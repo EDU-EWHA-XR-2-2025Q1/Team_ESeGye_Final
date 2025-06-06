@@ -183,8 +183,7 @@ MonoBehaviour:
     \uC88B\uC744\uAE4C\uC694?\n\uC774\uB984\uC744 \uC54C\uB824\uC8FC\uC138\uC694!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -374,8 +373,7 @@ MonoBehaviour:
     \uAC00\uC774\uB4DC, \u2018\uB3D9AR\uC774\u2019\uC608\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -521,8 +519,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC774\uB984 \uC785\uB825 ..."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -726,7 +724,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -854,8 +852,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d6e2516f9673b4471b15dd09a093c59c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -890,7 +888,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 709, y: -383}
-  m_SizeDelta: {x: 207.8, y: 86.8}
+  m_SizeDelta: {x: 207.8, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &579191519
 GameObject:
@@ -921,42 +919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a728e8e5f42e47fa876b51b3454693a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steps:
-  - text: "\uC548\uB155\uD558\uC138\uC694! \n\uC774\uD654\uC5EC\uB300 \uC2E0\uC785\uC0DD
-      \uC5EC\uB7EC\uBD84\uC758 \uB3D9\uC544\uB9AC \uD0D0\uC0C9\uC744 \uB3D5\uB294
-      AR \uAC00\uC774\uB4DC, \u2018\uB3D9AR\uC774\u2019\uC608\uC694."
-    isNameInputStep: 0
-  - text: "\uBA3C\uC800, \uB2F9\uC2E0\uC744 \uBB50\uB77C\uACE0 \uBD80\uB974\uBA74
-      \uC88B\uC744\uAE4C\uC694?\n\uC774\uB984\uC744 \uC54C\uB824\uC8FC\uC138\uC694!"
-    isNameInputStep: 1
-  - text: "{name}, \uB9CC\uB098\uC11C \uBC18\uAC00\uC6CC! \n\uC774\uC81C \uBCF8\uACA9\uC801\uC73C\uB85C
-      \uD29C\uD1A0\uB9AC\uC5BC\uC744 \uC2DC\uC791\uD574\uBCF4\uC790."
-    isNameInputStep: 0
-  - text: "\u2018\uB3D9AR\uC774\u2019\uC5D0\uC11C\uB294 \uB3D9\uC544\uB9AC \uC2AC\uB85C\uAC74\uC744
-      \uC2A4\uCE94\uD558\uBA70 \uC815\uBCF4\uB97C \uC5BB\uACE0,\n\uD37C\uC990 \uC870\uAC01\uC744
-      \uBAA8\uC544 \uBBF8\uC158\uC744 \uC644\uC131\uD560 \uC218 \uC788\uC5B4\uC694.\n\uD37C\uC990\uC744
-      \uC644\uC131\uD558\uBA74 \uC791\uC740 \uBCF4\uC0C1\uB3C4 \uC900\uBE44\uB418\uC5B4
-      \uC788\uB2F5\uB2C8\uB2E4!"
-    isNameInputStep: 0
-  - text: "\uBAA8\uB4E0 \uC2A4\uCE94\uC740 \uD559\uBB38\uAD00\uC5D0\uC11C \uC9C4\uD589\uC774
-      \uB429\uB2C8\uB2E4. \uD559\uBB38\uAD00\uC73C\uB85C \uC774\uB3D9\uD574\uC8FC\uC138\uC694!"
-    isNameInputStep: 0
-  - text: "\uB2E4\uC591\uD55C \uC870\uAC74\uC758 \uB3D9\uC544\uB9AC\uB97C \uC2A4\uCE94\uD558\uBA74\uC11C
-      \uD37C\uC990 \uC870\uAC01\uC744 \uBAA8\uC544\uBCF4\uC138\uC694!"
-    isNameInputStep: 0
-  - text: "\uB9C8\uC74C\uC5D0 \uB4DC\uB294 \uB3D9\uC544\uB9AC\uB97C \uCC3E\uC73C\uBA74
-      '\uC800\uC7A5\uD558\uAE30'\uB85C \uC800\uC7A5, '\uC9C0\uC6D0\uD558\uAE30'\uB85C
-      \uC9C0\uC6D0\uD560 \uC218 \uC788\uC5B4\uC694!"
-    isNameInputStep: 0
-  - text: "\uBBF8\uC158\uC740 \uB2E4\uC74C\uACFC \uAC19\uC544\uC694!\n- \uCCAB \uC2AC\uB85C\uAC74
-      \uC2A4\uCE94 \uC131\uACF5! \n- \uC8FC\uC5B4\uC9C4 \uD0DC\uADF8 \uB3D9\uC544\uB9AC
-      \uCC3E\uAE30\n- \uC81C\uD55C \uC2DC\uAC04 \uB0B4 3\uAC1C \uB3D9\uC544\uB9AC
-      \uC2A4\uCE94\n- \uD604\uC7AC \uBAA8\uC9D1 \uC911\uC778 \uB3D9\uC544\uB9AC \uD0D0\uC0C9 "
-    isNameInputStep: 0
-  - text: "\uC900\uBE44\uB418\uC168\uB098\uC694?\n\uC774\uC81C AR \uCE74\uBA54\uB77C\uB97C
-      \uD1B5\uD574 \uB3D9\uC544\uB9AC \uC2AC\uB85C\uAC74\uC744 \uC2A4\uCE94\uD574\uBCFC
-      \uAC70\uC608\uC694.\n\uC798 \uC778\uC2DD\uB418\uB294\uC9C0 \uD655\uC778\uD574\uBCFC\uAC8C\uC694!"
-    isNameInputStep: 0
   panelTutorial: {fileID: 1778169338}
   panelNameInput: {fileID: 1991536116}
   tutorialText: {fileID: 316344096}
@@ -1016,7 +978,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 709, y: -383}
-  m_SizeDelta: {x: 207.8, y: 86.8}
+  m_SizeDelta: {x: 207.8, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618257728
 MonoBehaviour:
@@ -1094,8 +1056,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d6e2516f9673b4471b15dd09a093c59c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1137,13 +1099,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684089795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011645593, w: -0.9999322}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 618257727}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.335}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1172,8 +1134,7 @@ MonoBehaviour:
   m_text: "\uC800\uC7A5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1311,6 +1272,8 @@ GameObject:
   - component: {fileID: 1147508754}
   - component: {fileID: 1147508753}
   - component: {fileID: 1147508752}
+  - component: {fileID: 1147508757}
+  - component: {fileID: 1147508756}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1402,6 +1365,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1147508756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147508751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0c65c45c3a39b46cda7c3ff50ae7abc3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1147508757
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147508751}
+  m_CullTransparentMesh: 1
 --- !u!1 &1168591847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,8 +1463,7 @@ MonoBehaviour:
   m_text: "  \u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1705,19 +1705,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733270202}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a728e8e5f42e47fa876b51b3454693a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steps: []
   panelTutorial: {fileID: 1778169338}
   panelNameInput: {fileID: 1991536116}
   tutorialText: {fileID: 316344096}
   nextButton: {fileID: 560134867}
-  nameInputField: {fileID: 0}
-  nameSubmitButton: {fileID: 0}
-  typingSpeed: 0.05
+  nameInputField: {fileID: 540951701}
+  nameSubmitButton: {fileID: 618257728}
+  typingSpeed: 0.5
 --- !u!1 &1778169338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,8 +1854,7 @@ MonoBehaviour:
   m_text: "\uB2E4\uC74C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
-  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2,
-    type: 2}
+  m_sharedMaterial: {fileID: -2331791763194358824, guid: 6bb3626a062fe4f4baa9ff193c535fc2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
