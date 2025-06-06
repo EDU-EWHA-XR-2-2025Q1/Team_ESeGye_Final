@@ -36,7 +36,7 @@ public class MissionCardUI : MonoBehaviour
     };
 
     private readonly string[] descriptions = {
-        "이화여대 중앙동아리 정보를\n얻을 수 있는 학문관으로 이동하세요. ",
+        "이화여자대학교의 중앙동아리 정보를 얻을 수 있는 학문관으로 이동하세요.",
         "카메라를 활용해 처음으로 동아리 슬로건을 스캔해보세요.",
         "공통된 태그를 가진 3개의 동아리를 스캔해보고, 내 관심사를 확인해보세요!",
         "현재 모집 중인 동아리를 찾아 스캔하세요. 내 첫 지원은 어떤 동아리일까요?"
@@ -137,7 +137,7 @@ public class MissionCardUI : MonoBehaviour
         emojiImg.sprite = emojiSprites[index];
 
         bool isCompleted = PlayerPrefs.GetInt($"Mission_{index}_Complete", 0) == 1;
-        puzzleStatusText.text = isCompleted ? "퍼즐 획득 완료 " : "퍼즐 획득 필요 ";
+        puzzleStatusText.text = isCompleted ? "▣ 퍼즐 획득 완료 " : "ㅁ 퍼즐 획득 필요 ";
 
         if (arriveButton != null)
         {
