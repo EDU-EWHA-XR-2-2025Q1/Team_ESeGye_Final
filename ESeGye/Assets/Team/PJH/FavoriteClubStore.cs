@@ -14,6 +14,14 @@ public static class FavoriteClubStore
         }
     }
 
+    public static void RemoveFavorite(ClubData club)
+    {
+        if (Favorites.Contains(club))
+        {
+            Favorites.Remove(club);
+        }
+    }
+
     public static void Clear()
     {
         Favorites.Clear();
