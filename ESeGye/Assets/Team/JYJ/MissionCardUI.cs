@@ -96,6 +96,7 @@ public class MissionCardUI : MonoBehaviour
         Debug.Log($"[CompleteMission] index: {index}, missionCompleted[{index}] = {missionCompleted[index]}");
 
         PlayerPrefs.SetInt($"Mission_{index}_Complete", 1);
+        PlayerPrefs.SetInt("ShowPuzzlePopup", 1);
         PlayerPrefs.Save();
         Debug.Log($"[Scan] 저장된 Mission_1_Complete: {PlayerPrefs.GetInt("Mission_1_Complete")}");
 
