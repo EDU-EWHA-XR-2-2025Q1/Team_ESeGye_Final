@@ -406,6 +406,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2495152194395489491, guid: 8d9dbcb19f413467cac80c0c7f29b9f5,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495152194395489491, guid: 8d9dbcb19f413467cac80c0c7f29b9f5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2495152194395489491, guid: 8d9dbcb19f413467cac80c0c7f29b9f5,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1524,12 +1534,12 @@ PrefabInstance:
     - target: {fileID: 6033419301301257986, guid: 33d946818d24fda42a5e4552b6f60606,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 750
+      value: 439.58023
       objectReference: {fileID: 0}
     - target: {fileID: 6033419301301257986, guid: 33d946818d24fda42a5e4552b6f60606,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -757.6
+      value: -737
       objectReference: {fileID: 0}
     - target: {fileID: 6033419301301257986, guid: 33d946818d24fda42a5e4552b6f60606,
         type: 3}
@@ -1603,6 +1613,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a304beae9c18d48b682d5303dcf2c4be,
         type: 3}
+    - target: {fileID: 8650115112235191753, guid: 33d946818d24fda42a5e4552b6f60606,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6745283
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650115112235191753, guid: 33d946818d24fda42a5e4552b6f60606,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650115112235191753, guid: 33d946818d24fda42a5e4552b6f60606,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7786909
+      objectReference: {fileID: 0}
     - target: {fileID: 8650115112235191753, guid: 33d946818d24fda42a5e4552b6f60606,
         type: 3}
       propertyPath: m_PreserveAspect

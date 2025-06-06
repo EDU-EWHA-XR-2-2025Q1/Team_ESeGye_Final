@@ -2593,7 +2593,7 @@ MonoBehaviour:
   emojiSprites:
   - {fileID: 21300000, guid: 72272e99a41a74c179be8c37f75d642f, type: 3}
   - {fileID: 21300000, guid: 992aead453e224319abd4082744f4adf, type: 3}
-  - {fileID: 21300000, guid: faecd227f31dedb40b2309d59799255a, type: 3}
+  - {fileID: 21300000, guid: c502e820a87a342bfb16e65d0d700dbf, type: 3}
   - {fileID: 21300000, guid: bf4a3f013ae5dc444b83ce9a1c8b81a5, type: 3}
   arriveButton: {fileID: 77626913}
   speechBubblePrefab: {fileID: 2199082526816305521, guid: 3fb49efc58f5f4387b40e4836e4ed4cd,
