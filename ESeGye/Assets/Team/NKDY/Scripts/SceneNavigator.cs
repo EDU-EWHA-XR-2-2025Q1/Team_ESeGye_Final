@@ -20,7 +20,7 @@ public class SceneNavigator : MonoBehaviour
     public void GoToClosingSceneFromMain()
     {
         Debug.Log("▶ GoToClosingSceneFromMain 호출됨");
-        SceneManager.LoadScene("ClosingScene");
+        SceneManager.LoadScene("Closing");
     }
 
     public void GoToMainSceneFromMain()
