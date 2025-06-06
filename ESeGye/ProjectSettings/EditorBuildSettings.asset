@@ -6,27 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Team/JSH/MainScene.unity
-    guid: 7fd34b058ed26b74db89e7869aec9ae2
+    path: Assets/SamplesResources/Scenes/0-Main.unity
+    guid: a09cb257d566c489595b16ab37547666
+  - enabled: 1
+    path: Assets/Team/PJH/ScanScene.unity
+    guid: 56baf60b6410e094fac71778d83a1e95
+  - enabled: 1
+    path: Assets/Team/JSH/Favorite_Club/Favorite.unity
+    guid: adec2dc1b42ec48e5ae0f1fd17154972
+  - enabled: 1
+    path: Assets/Team/JSH/Favorite_Club/New Scene.unity
+    guid: 2444d64cb31ba4ac2bb57ddfc91c98a5
+  - enabled: 1
+    path: Assets/Team/SJH/Closing/Closing.unity
+    guid: c73b41e889a0046b793869252fa5849d
   - enabled: 1
     path: Assets/Team/JYJ/MissionScene.unity
     guid: d2a76a311df25b24c8248373fc6db663
+  - enabled: 1
+    path: Assets/Team/JSH/MainScene.unity
+    guid: 7fd34b058ed26b74db89e7869aec9ae2
+  - enabled: 1
+    path: Assets/Team/SJH/OnBoarding/OnBoarding.unity
+    guid: 6d43ef46411aa4f5a9c4567ebdfb9ef4
+  - enabled: 1
+    path: Assets/Team/PJH/InfoScene.unity
+    guid: c450c1d8c7c719b40ab09390c94d38a2
   - enabled: 1
     path: Assets/Team/NKDY/PuzzleScene.unity
     guid: acd60bcee8ac37c478d5a6f2d81f9ba0
   - enabled: 1
     path: Assets/Team/JSH/Setting/Setting.unity
-    guid: 274dfe00104b94d928450df8c8472361
+    guid: 821f0c483df584e9b802e64bb74a2f35
   - enabled: 1
-    path: Assets/Team/JSH/Favorite_Club/Favorite.unity
-    guid: adec2dc1b42ec48e5ae0f1fd17154972
-  - enabled: 1
-    path: Assets/Team/PJH/ScanScene.unity
-    guid: 56baf60b6410e094fac71778d83a1e95
-  - enabled: 1
-    path: Assets/Team/PJH/InfoScene.unity
-    guid: c450c1d8c7c719b40ab09390c94d38a2
-  - enabled: 1
-    path: Assets/Team/SJH/Closing/Closing.unity
-    guid: c73b41e889a0046b793869252fa5849d
+    path: Assets/Team/SJH/Play/PlayScene.unity
+    guid: 2593369d7da02496398289f034887cbf
   m_configObjects: {}
