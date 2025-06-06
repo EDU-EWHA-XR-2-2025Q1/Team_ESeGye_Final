@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:ESeGye/Assets/Pictures/Buttons/save.png.meta
 guid: 99088ffd81e6441acb3ac3e683458059
+========
+guid: 59de715d6649043358dab58cd8b71de7
+>>>>>>>> fb918c5 (feat: mission list 수정):ESeGye/Assets/Pictures/Buttons/Button.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,6 +99,22 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+<<<<<<<< HEAD:ESeGye/Assets/Pictures/Buttons/save.png.meta
+========
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+>>>>>>>> fb918c5 (feat: mission list 수정):ESeGye/Assets/Pictures/Buttons/Button.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
