@@ -41,8 +41,10 @@ public class ScannedClubManager : MonoBehaviour
             if (!tagCount.ContainsKey(tag))
                 tagCount[tag] = 0;
             tagCount[tag]++;
+            Debug.Log($"[태그 누적] {tag} → {tagCount[tag]}회");
         }
 
+        
         if (!mission3Done && tagCount.Values.Any(count => count >= 3))
         {
             PlayerPrefs.SetInt("Mission_2_Complete", 1); // Mission 3
@@ -58,4 +60,10 @@ public class ScannedClubManager : MonoBehaviour
             mission4Done = true;
         }
     }
+    
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
 }
