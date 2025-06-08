@@ -2,11 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-<<<<<<< HEAD
   serializedVersion: 3
-=======
-  serializedVersion: 2
->>>>>>> origin/member/NKDY2
   tags: []
   layers:
   - Default
@@ -45,8 +41,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
   m_RenderingLayers:
   - Default
-=======
->>>>>>> origin/member/NKDY2

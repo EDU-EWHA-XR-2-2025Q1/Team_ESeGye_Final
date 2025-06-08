@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// ScanScene¿¡¼­ Button Å¬¸¯ ½Ã ½ÇÇà
+// ScanSceneï¿½ï¿½ï¿½ï¿½ Button Å¬ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 public class ClubButtonHandler : MonoBehaviour
 {
-    public ClubData clubData; // ÀÌ ¹öÆ°¿¡ ÇØ´çÇÏ´Â ClubData ¿¬°á
+    public ClubData clubData; // ï¿½ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ClubData ï¿½ï¿½ï¿½ï¿½
 
     public void OnClick()
     {
-        print("´­¸²");
+        print("ï¿½ï¿½ï¿½ï¿½");
         ClubSelector.SelectedClub = clubData;
         UnityEngine.SceneManagement.SceneManager.LoadScene("InfoScene");
     }

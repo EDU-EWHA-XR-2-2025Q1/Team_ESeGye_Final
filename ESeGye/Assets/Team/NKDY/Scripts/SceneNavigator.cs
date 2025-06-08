@@ -5,19 +5,51 @@ using UnityEngine.SceneManagement;
 
 public class SceneNavigator : MonoBehaviour
 {
-    public void GoToScanScene()
+    public void GoToScanSceneFromMain()
     {
-        SceneManager.LoadScene("ScanScene"); // ΩΩ∑Œ∞« Ω∫ƒµ æ¿ ¿Ã∏ß
+        Debug.Log("‚ñ∂ GoToScanSceneFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("ScanScene");
     }
 
-    public void GoToPuzzleScene()
+    public void GoToPuzzleSceneFromMain()
     {
-        SceneManager.LoadScene("PuzzleScene"); // ∆€¡Ò »≠∏È æ¿ ¿Ã∏ß
+        Debug.Log("‚ñ∂ GoToPuzzleSceneFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("PuzzleScene");
     }
 
-    public void GoToMainScene()
+    public void GoToClosingSceneFromMain()
     {
-        SceneManager.LoadScene("MainScene"); // MainScene ¿Ã∏ß¿∏∑Œ º≥¡§
+        Debug.Log("‚ñ∂ GoToClosingSceneFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("Closing");
     }
 
+    public void GoToMainSceneFromMain()
+    {
+        Debug.Log("‚ñ∂ GoToMainSceneFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void GoToPlaySceneFromMain()
+    {
+        Debug.Log("‚ñ∂ GoToPlaySceneFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("PlayScene");
+    }
+    
+    public void GoToSettingFromMain()
+    {
+        Debug.Log("‚ñ∂ GoToSettingFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("Setting");
+    }
+
+    public void GoToFavoriteClubFromMain()
+    {
+        Debug.Log("‚ñ∂ GoToFavoriteClubFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("Favorite");
+    }
+
+    public void GoToMissionFromMain()
+    {
+        Debug.Log("‚ñ∂ GoToMissionFromMain Ìò∏Ï∂úÎê®");
+        SceneManager.LoadScene("MissionScene");
+    }
 }

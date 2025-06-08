@@ -15,4 +15,5 @@ public class ClubData : ScriptableObject
     public string activiry;
     public string[] tags;
     public string applyLink;
+    public bool isRecruiting;
 }
