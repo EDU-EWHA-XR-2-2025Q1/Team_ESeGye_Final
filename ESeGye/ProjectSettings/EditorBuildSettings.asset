@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/SamplesResources/Scenes/0-Main.unity
     guid: a09cb257d566c489595b16ab37547666
   - enabled: 1
+    path: Assets/Team/SJH/OnBoarding/OnBoarding.unity
+    guid: 6d43ef46411aa4f5a9c4567ebdfb9ef4
+  - enabled: 1
     path: Assets/Team/PJH/ScanScene.unity
     guid: 56baf60b6410e094fac71778d83a1e95
   - enabled: 1
@@ -27,9 +30,6 @@ EditorBuildSettings:
     path: Assets/Team/JSH/MainScene.unity
     guid: 7fd34b058ed26b74db89e7869aec9ae2
   - enabled: 1
-    path: Assets/Team/SJH/OnBoarding/OnBoarding.unity
-    guid: 6d43ef46411aa4f5a9c4567ebdfb9ef4
-  - enabled: 1
     path: Assets/Team/PJH/InfoScene.unity
     guid: c450c1d8c7c719b40ab09390c94d38a2
   - enabled: 1
@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Team/SJH/Play/PlayScene.unity
     guid: 2593369d7da02496398289f034887cbf
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Team/JSH/SpeechBubble/SpeechBubble.unity
+    guid: 53c02fdf17a41464cb6a73be6531bcfb
+  - enabled: 1
+    path: Assets/Team/JSH/Puzzle/PuzzleBubble.unity
+    guid: 29bb31a7b4c1c42739e890895bedf6fb
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a46ababd862a0934ca8b1652e34e154e,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 09e19728abff8454fa8204dfb9de343d,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 00cba9c75ff26a34b8229257d7c3a4d4,
+      type: 2}
