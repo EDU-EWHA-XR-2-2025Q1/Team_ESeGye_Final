@@ -1,4 +1,4 @@
-# Team_ESeGye_project
+# Team_ESeGye_Final
 
 ## 퍼즐 초기화 안내
 
